@@ -20,4 +20,5 @@ print("podau signal")
 h=0
 while (h<10):
     pi.set_servo_pulsewidth(ESC, 1555)
+    h=h+1
     time.sleep(1)
