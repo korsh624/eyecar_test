@@ -22,6 +22,7 @@ h=90
 while (h!=0):
     pi.set_servo_pulsewidth(ESC, 1555)
     pi.set_servo_pulsewidth(STEER, int(16.66666 * h))
+    h=int(input("vvedi h"))
     print(h)
     time.sleep(1)
 pi.set_servo_pulsewidth(ESC, 0)
