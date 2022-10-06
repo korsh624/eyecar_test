@@ -21,6 +21,8 @@ time.sleep(2)
 h=0
 while (h<10):
     pi.set_servo_pulsewidth(ESC, 1555)
+    pi.set_servo_pulsewidth(STEER, int(16.66666 * angle))
     h=h+1
     print(h)
     time.sleep(1)
+pi.set_servo_pulsewidth(ESC, 0)
