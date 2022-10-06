@@ -17,6 +17,7 @@ pi.set_servo_pulsewidth(ESC, 0)
 pi.set_servo_pulsewidth(STEER, 0)
 time.sleep(2)
 pi.set_servo_pulsewidth(ESC, 1500)
+pi.set_servo_pulsewidth(STEER, 90)
 time.sleep(2)
 h=0
 while (h<10):
