@@ -18,11 +18,11 @@ pi.set_servo_pulsewidth(STEER, 0)
 time.sleep(2)
 pi.set_servo_pulsewidth(ESC, 1500)
 time.sleep(2)
-h=0
-while (h<10):
+h=90
+while (h!=0):
     pi.set_servo_pulsewidth(ESC, 1555)
-    pi.set_servo_pulsewidth(STEER, int(16.66666 * 90))
-    h=h+1
+    pi.set_servo_pulsewidth(STEER, int(16.66666 * h))
     print(h)
     time.sleep(1)
 pi.set_servo_pulsewidth(ESC, 0)
+os.system("sudo killall pigpiod")  # Launching GPIO library
