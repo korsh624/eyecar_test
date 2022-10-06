@@ -16,7 +16,8 @@ time.sleep(1)
 pi.set_servo_pulsewidth(ESC, 0)
 pi.set_servo_pulsewidth(STEER, 0)
 time.sleep(2)
-print("podau signal")
+pi.set_servo_pulsewidth(ESC, 1500)
+time.sleep(2)
 h=0
 while (h<10):
     pi.set_servo_pulsewidth(ESC, 1555)
